@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<article class="sample">
+		{% if post.published_date %}
+			<aside class="actions">
+				{% if user.is_authenticated %}	
+					<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"> 
+						{% include './icons/pencil-fill.svg' %}
+					</a>
+				{% endif %}
+			</aside>
+			<h2><a href="">{{ post.title }}</a></h2>
+			<p>{{ post.text|linebreaksbr }}</p>
+            <time>published: {{ post.published_date }}</time>
+        {% endif %}
+	</article>		
+{% endblock %}
+
+
