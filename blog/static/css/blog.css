@@ -1,37 +1,52 @@
-body {
-	background-color: #BDBDBD;
+h1 a, h2 a {
+	color: #000000;
+	font-family: 'lobster';
+	background-color: #FF7043;
+	border-style:solid;
+	
 }
 
 
-.heading h1 {
-	font-size: 50pt ;
-	color: #212121 ;
-	margin-left: 500px;
-	font-family: 'Brush Script MT';
-	text-decoration: underline;
+.post h2 a
+{
+	color: #212121;
+	background-color:#69F0AE;
+	
+}
+
+.post-header {
+	margin-left: 100px ;
+	padding: 5px;
+}
+
+.post-header h1 a{
+	padding: 15px;
+}
+
+.post p
+{
+	background-color: #F06292;
+	border-style: groove;
+	padding: 20px 2px 20px 40px;
+	font-family: 'lobster';
 }
 
 
 .post {
-	margin: 10px;
-	background-color: #E0E0E0;
-	padding: 5px;
 	border-style: groove;
-	border-color: #000000 ;
+	margin: 20px;
+	padding: 20px;
 }
 
-.post h2 a{
-	color: #757575;
-	font-family: 'Lobster', cursive;
-	text-decoration: underline;
-}
-
-.post p {
-	font-size: 16pt ;
-	font-family: 'Papyrus';
-}
-
-.post time {
+.post time
+{
 	color: #000000;
-	font-family: 'Lobster', cursive;
+	background-color: #4FC3F7;
+	padding: 15px;
+	font-family: 'lobster two';
+	border-style: solid;
+}
+body 
+{
+	padding-left: 15px;
 }
