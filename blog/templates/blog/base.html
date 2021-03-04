@@ -10,14 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="heading">
+        <header class="heading">
             <h1>Sahil's Writings</h1>
-        </div>
-        {% if user.is_authenticated %}
-            <a href = "{% url 'post_new' %}" class="top-menu">
-                {% include './icons/file-earmark-plus.svg' %}
-            </a>
-        {% endif %}
+        </header>
+
         <main >
             <div >
                 <div >
